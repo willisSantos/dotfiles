@@ -9,3 +9,8 @@ vim.keymap.set("i", "<up>", "<nop>", { noremap = true })
 vim.keymap.set("i", "<down>", "<nop>", { noremap = true })
 vim.keymap.set("i", "<left>", "<nop>", { noremap = true })
 vim.keymap.set("i", "<right>", "<nop>", { noremap = true })
+
+
+-- Modules
+require("config.lazy")
+require("config.catppuccin")
