@@ -1,3 +1,4 @@
+vim.o.termguicolors = true
 vim.opt.number = true
 vim.g.mapleader = ","
 vim.opt.mouse = ""
