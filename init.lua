@@ -15,4 +15,5 @@ vim.keymap.set("i", "<right>", "<nop>", { noremap = true })
 -- Modules
 require("config.lazy")
 require("config.catppuccin")
+require("config.lualine")
 require("mapping")
