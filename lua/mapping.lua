@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 -- nvimtree
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
-map("n", "<leader>e", "<cmd>NvimTreeFocus<CR", { desc = "nvimtree focus window" })
+map("n", "<leader>e", "<cmd>NvimTreeFindFile<CR>", { desc = "nvimtree focus window" })
 -- which-key
 map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
 map("n", "<leader>wk", function ()
