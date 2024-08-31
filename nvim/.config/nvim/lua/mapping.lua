@@ -28,3 +28,8 @@ map(
   "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
   { desc = "telescope find all files" }
 )
+map("", "<c-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "tmux-navigator go to left"})
+map("", "<c-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "tmux-navigator go to down"})
+map("", "<c-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "tmux-navigator go to up"})
+map("", "<c-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "tmux-navigator go to right"})
+map("", "<c-\\>", "<cmd>TmuxNavigatePrevious<cr>", { desc = "tmux-navigator go to previous panel"})
