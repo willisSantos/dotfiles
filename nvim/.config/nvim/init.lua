@@ -1,8 +1,12 @@
 vim.o.termguicolors = true
+vim.o.tabstop = 4
+vim.o.expandtab = true
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
 vim.opt.number = true
 vim.g.mapleader = ","
-vim.opt.mouse = ""
-vim.opt.mousescroll = "ver:0,hor:0"
+-- vim.opt.mouse = ""
+-- vim.opt.mousescroll = "ver:0,hor:0"
 vim.keymap.set("", "<up>", "<nop>", { noremap = true })
 vim.keymap.set("", "<down>", "<nop>", { noremap = true })
 vim.keymap.set("", "<left>", "<nop>", { noremap = true })
@@ -11,6 +15,7 @@ vim.keymap.set("i", "<up>", "<nop>", { noremap = true })
 vim.keymap.set("i", "<down>", "<nop>", { noremap = true })
 vim.keymap.set("i", "<left>", "<nop>", { noremap = true })
 vim.keymap.set("i", "<right>", "<nop>", { noremap = true })
+vim.wo.relativenumber = true
 
 -- Modules
 require("config.lazy")
@@ -20,4 +25,6 @@ require("config.catppuccin")
 require("config.dashboard")
 require("config.lualine")
 require("config.git-plugins")
+require("config.nvim-tree")
+require("config.nvim-treesitter")
 require("mapping")

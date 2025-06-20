@@ -1,4 +1,6 @@
 local map = vim.keymap.set
+-- lsp
+map("n", "<leader>?", "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "see error in file" })
 -- nvimtree
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
 map("n", "<leader>e", "<cmd>NvimTreeFindFile<CR>", { desc = "nvimtree focus window" })
@@ -28,8 +30,11 @@ map(
   "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
   { desc = "telescope find all files" }
 )
+--tmux-navigator
 map("", "<c-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "tmux-navigator go to left"})
 map("", "<c-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "tmux-navigator go to down"})
 map("", "<c-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "tmux-navigator go to up"})
 map("", "<c-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "tmux-navigator go to right"})
 map("", "<c-\\>", "<cmd>TmuxNavigatePrevious<cr>", { desc = "tmux-navigator go to previous panel"})
+-- other motions
+map("i","<S-Tab>", "<c-d>", { desc = "remove indentation in same size" })

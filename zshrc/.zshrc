@@ -1,6 +1,8 @@
-export PATH="$PATH:/opt/nvim-linux64/bin"
-export EDITOR="/opt/nvim-linux64/bin/nvim"
-export PATH="$PATH:/home/wivieira/.local/share/jdtls/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export EDITOR="/opt/nvim-linux-x86_64/bin/nvim"
+export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
+# export TERM=alacritty
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -17,8 +19,11 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git tmux)
+plugins=(git tmux zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search vi-mode)
 ZSH_TMUX_AUTOSTART=true
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+VI_MODE_SET_CURSOR=true
+bindkey -v
 source $ZSH/oh-my-zsh.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
@@ -59,3 +64,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f "/home/wivieira/.ghcup/env" ] && . "/home/wivieira/.ghcup/env" # ghcup-env
