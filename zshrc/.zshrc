@@ -2,7 +2,6 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export EDITOR="/opt/nvim-linux-x86_64/bin/nvim"
 export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
-# export TERM=alacritty
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
